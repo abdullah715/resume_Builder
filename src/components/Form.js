@@ -83,7 +83,7 @@ function FormExample({id}) {
   function startSubmission(form){
     let x = form.querySelectorAll('.was-validated :invalid~.invalid-feedback')
     console.log("check",x)
-    if(x){
+    if(x.length > 0){
       console.log("in",x)
       setAlert({type:"danger",msg:"Please Check all Mandatory Fields",show:"true"})
     }else{
@@ -113,7 +113,7 @@ function FormExample({id}) {
       event.preventDefault();
 
 
-      setTimeout(_=>startSubmission(form),1000)
+      setTimeout(_=>startSubmission(form),3000)
       
       
      
