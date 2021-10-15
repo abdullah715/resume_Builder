@@ -113,7 +113,7 @@ function FormExample({id}) {
       event.preventDefault();
 
 
-      setTimeout(_=>startSubmission(form),3000)
+      setTimeout(_=>startSubmission(form),1000)
       
       
      
